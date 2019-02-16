@@ -1,0 +1,13 @@
+
+	$string_length=strlen($search);
+	
+	if(!empty(text)&&!empty($search)&&!empty($replace)){
+		
+		while($strpos=strpos($text,$search,$offset)){
+			echo $strpos.'<br>';
+			echo $offset=$strpos+$string_length.'<br>';
+		}
+		echo 'ok';
+	}else{
+		echo'pls fill the all fields';
+	}
